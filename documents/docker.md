@@ -1,4 +1,4 @@
-# Environnement de Développement
+# Environnement de développement docker-compose
 
 ```sh
 
@@ -10,14 +10,13 @@ chmod o+w "./."
 chmod o+w "./bdd.db"
 
 # stop and clean
-docker-compose down -v
+docker compose down -v
 
 # Start
-docker-compose up -d
+docker compose up -d
 
 # log looking
-docker-compose logs -f composer
+docker compose logs -f composer
 
-docker-compose exec backend sh
-
+docker compose exec backend sh
 ```

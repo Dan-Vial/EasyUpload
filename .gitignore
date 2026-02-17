@@ -3,3 +3,5 @@ vendor/
 bdd.db
 .dev_local/
 var/
+
+.php-cs-fixer.cache
