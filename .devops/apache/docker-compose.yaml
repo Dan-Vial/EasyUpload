@@ -1,0 +1,16 @@
+services:
+  apache:
+    build: ./.devops/apache
+    restart: always
+
+    volumes:
+      - $PWD:/var/www/html:rw,z
+
+    ports:
+      - 8080:80
+
+    networks:
+      - easy_upload
+
+    stdin_open: true
+    tty: true

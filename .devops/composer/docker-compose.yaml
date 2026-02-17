@@ -1,0 +1,11 @@
+services:
+  composer:
+    image: docker.io/library/composer:2.8.12
+    working_dir: /app
+    volumes:
+      - $PWD:/app:z
+
+    command: ["composer", "update"]
+
+    stdin_open: true
+    tty: true
